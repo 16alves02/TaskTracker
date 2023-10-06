@@ -1,0 +1,123 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: linear-gradient(to right, #ff6b00, #ff0077);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+#clock {
+    font-size: 28px; 
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #f9f9f9; 
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.todo h2, .expense-tracker h2 {
+    font-size: 24px;
+    margin: 0 0 15px;
+    color: #ff0077;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+.expense-tracker li {
+    background: linear-gradient(to right, #ff9999, #ff6666);
+}
+
+button, input[type="checkbox"] {
+    padding: 10px;
+    background: linear-gradient(to right, #ff0077, #ff6b00);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.2s ease-in;
+}
+
+button:hover, input[type="checkbox"]:hover {
+    background: linear-gradient(to right, #ff6b00, #ff3d3d);
+}
+
+li button.remove {
+    background: linear-gradient(to right, #FF6347, #D94629);
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+    border: 1px solid #ff6b00;
+    border-radius: 5px;
+    transition: border 0.2s ease-in;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border: 1px solid #ff0077;
+}
+
+/* Add some spacing and color to the total expense */
+#totalExpense {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ff0077;
+}
+
+/* Add a better watermark style */
+.watermark {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    padding: 5px;
+    border-radius: 5px;
+}

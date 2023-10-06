@@ -1,6 +1,6 @@
 # TaskTracker
 
-![TaskTracker Logo](calculator-icon.png)
+![TaskTracker Logo](tasktracker_logo.png)
 
 TaskTracker is a simple web-based tool for managing tasks and tracking expenses, created by [@16alves02](https://github.com/16alves02). It offers an easy way to keep track of your to-do list and monitor your expenses in one convenient place.
 
